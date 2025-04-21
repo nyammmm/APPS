@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image, ImageOps
 
-st.set_page_config(page_title="PPE Safety Detection", layout="centered")
+st.set_page_config(page_title="❤️❤️PPE Safety Detection❤️❤️", layout="centered")
 
 # Load model (cached)
 @st.cache_resource
@@ -13,10 +13,10 @@ def load_model():
 model = load_model()
 class_names = ['Safe', 'Violation']
 
-st.title("🔥 PPE Safety Detection System")
+st.title("👷PPE Safety Detection System👷")
 st.write("Upload an image to check for PPE safety violations (e.g., missing safety gear).")
 
-file = st.file_uploader("📁 Choose an image", type=["jpg", "jpeg", "png", "bmp"])
+file = st.file_uploader("📷📷 Choose an image 📷📷", type=["jpg", "jpeg", "png", "bmp"])
 
 def import_and_predict(image_data, model):
     size = model.input_shape[1:3]  # e.g., (224, 224)
