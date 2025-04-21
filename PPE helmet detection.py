@@ -6,7 +6,7 @@ from PIL import Image, ImageOps
 # Load model with caching to prevent reloading on every change
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model('final_vgg16_model.keras')
+    return tf.keras.models.load_model('compact_mobilenet_model.keras')
 
 model = load_model()
 class_names = ['Safe', 'Violation']
