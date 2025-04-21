@@ -14,7 +14,7 @@ model = load_model()
 class_names = ['Safe', 'Violation']
 
 st.title("👷PPE Safety Detection System👷")
-st.write("Upload an image to check for PPE safety violations (e.g., missing safety gear).")
+st.write("Upload an image to check for PPE safety violations(only helmet).")
 
 file = st.file_uploader("📷📷 Choose an image 📷📷", type=["jpg", "jpeg", "png", "bmp"])
 
