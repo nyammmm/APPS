@@ -19,7 +19,7 @@ file = st.file_uploader("Choose an image", type=["jpg", "jpeg", "png", "bmp"])
 def import_and_predict(image_data, model):
     # Resize to the model's expected input size
     size = model.input_shape[1:3]
-    image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
+    image = ImageOps.fit(image_data, size, Image.LANCZOS)
     img_array = np.asarray(image).astype('float32') / 255.0
     img_array = np.expand_dims(img_array, axis=0)
     prediction = model.predict(img_array)
