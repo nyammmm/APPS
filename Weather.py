@@ -7,7 +7,7 @@ st.set_page_config(page_title="🌦️ Weather Classification 🌤️", layout="
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model('weather_classification_model.keras')
+    return tf.keras.models.load_model('weather.keras')
 
 model = load_model()
 class_names = ['Sunshine', 'Sunrise', 'Cloudy', 'Rain']
