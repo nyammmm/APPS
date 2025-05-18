@@ -10,7 +10,7 @@ def load_model():
     return tf.keras.models.load_model('weather.keras')
 
 model = load_model()
-class_names = ['Sunshine', 'Sunrise', 'Cloudy', 'Rain']
+class_names = ['Rainy', 'Cloudy', 'Sunshine', 'Sunrise']
 
 st.title("🌦️ Weather Image Classifier")
 st.write("Upload an image to classify the current weather condition.")
