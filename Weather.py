@@ -40,7 +40,7 @@ else:
 
     st.markdown(f"### 🌈 Predicted Weather: **{predicted_class}**")
 
-    if predicted_class == 'Rain':
+    if predicted_class == 'Rainy':
         st.warning("🌧️ It's likely raining — don't forget your umbrella!")
     elif predicted_class == 'Sunshine':
         st.success("☀️ Bright and sunny day ahead!")
