@@ -29,7 +29,7 @@ if file is None:
     st.info("🖼️ Please upload a weather image to proceed.")
 else:
     image = Image.open(file).convert('RGB')
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+    st.image(image, caption="Uploaded Image", use_container_width=True)
 
     with st.spinner("🔍 Classifying weather..."):
         prediction = import_and_predict(image, model)
@@ -39,7 +39,6 @@ else:
     confidence = round(100 * np.max(prediction), 2)
 
     st.markdown(f"### 🌈 Predicted Weather: **{predicted_class}**")
-    st.markdown(f"### 📊 Confidence: **{confidence}%**")
 
     if predicted_class == 'Rain':
         st.warning("🌧️ It's likely raining — don't forget your umbrella!")
