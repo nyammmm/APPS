@@ -3,4 +3,4 @@ numpy
 streamlit
 tensorflow
 pillow
-cv2
+opencv-python
