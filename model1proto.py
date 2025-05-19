@@ -40,7 +40,7 @@ if uploaded_file:
         input_data = np.expand_dims(sequence, axis=0)  # (1, 10, 128, 128, 3)
 
         # Load model
-        model = load_model("model.h5")  # make sure model.h5 is in the same folder
+        model = load_model("proj.h5")  # make sure model.h5 is in the same folder
 
         # Predict
         prediction = model.predict(input_data)[0][0]
