@@ -47,7 +47,7 @@ if uploaded_file:
         label = "✅ Safe" if prediction >= 0.5 else "❌ Unsafe"
 
         # Display result
-        st.markdown("### 🧠 Prediction Result")
+        st.markdown("### Classification Result")
         st.success(f"This Construction Site is **{label}**")
     else:
         st.error("Failed to read the video. Please try a different file.")
