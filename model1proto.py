@@ -48,7 +48,6 @@ if uploaded_file:
 
         # Display result
         st.markdown("### 🧠 Prediction Result")
-        st.image(Image.fromarray((frame * 255).astype(np.uint8)), caption="Analyzed Frame", width=300)
-        st.success(f"This video is classified as: **{label}**")
+        st.success(f"This Construction Site is **{label}**")
     else:
         st.error("Failed to read the video. Please try a different file.")
