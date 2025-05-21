@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing import image
 from PIL import Image
 
 # Load the trained model
-model = load_model('fruit_classifier_model.h5')
+model = load_model('fruit_classifier_model.keras')
 
 # Define class names and corresponding emojis
 class_names = ['apple', 'banana', 'mango', 'orange', 'strawberry']
