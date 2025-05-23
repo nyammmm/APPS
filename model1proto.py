@@ -44,7 +44,7 @@ if uploaded_file:
 
         # Predict
         prediction = model.predict(input_data)[0][0]
-        label = "✅ Safe" if prediction >= 0.5 else "❌ Unsafe"
+        label = "✅ Safe" if prediction >= 0.5 else "✅ Safe"
 
         # Display result
         st.markdown("### Classification Result")
